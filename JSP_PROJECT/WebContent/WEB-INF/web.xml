@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+         http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+ 
+      <servlet>
+    	<servlet-name>DoctorInsert</servlet-name>
+    	<servlet-class>hms.AdmDoctorInsertServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    	<servlet-name>DoctorInsert</servlet-name>
+    	<url-pattern>/insert</url-pattern>
+    </servlet-mapping>
+    
+     <servlet>
+    	<servlet-name>DoctorRetreve</servlet-name>
+    	<servlet-class>hms.AdmDocRetreveServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    	<servlet-name>DoctorRetreve</servlet-name>
+    	<url-pattern>/log</url-pattern>
+    </servlet-mapping>
+    
+     <servlet>
+    	<servlet-name>DoctorUpdate</servlet-name>
+    	<servlet-class>hms.AdmDocUpdateServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    	<servlet-name>DoctorUpdate</servlet-name>
+    	<url-pattern>/update</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+		<servlet-name>prescriptionDetails</servlet-name>
+		<servlet-class>	hms.NurseServelet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>prescriptionDetails</servlet-name>
+		<url-pattern>/Details</url-pattern>
+	</servlet-mapping>
+
+</web-app>
