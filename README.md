@@ -1,2 +1,3 @@
-# SLIIT_Y2_S1
+online hospital management system 
+Tool : Java , jsp/Servlet
 
